@@ -25,8 +25,7 @@ function startTimer() {
   resetBtn.disabled = false;
   lapBtn.disabled = false;
 
-  interval = setInterval(() => 
-    {
+  interval = setInterval(() => {
     tens++;
     if (tens >= 100) {
       tens = 0;
