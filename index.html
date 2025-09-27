@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stop watch</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stop Watch</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <div id="timer">00:00:00:00</div>
-    <div id="buttons">
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-        <button id="reset">Reset</button>
+  <div class="stopwatch-container">
+    <div class="display" id="display">00:00:00:00</div>
+    <div class="controls">
+      <button class="btn-start" id="startBtn">Start</button> <h1>|</h1>
+      <button class="btn-stop" id="stopBtn" disabled>Stop</button> <h1>|</h1>
+      <button class="btn-reset" id="resetBtn" disabled>Reset</button> <h1>|</h1>
+      <button class="btn-lap" id="lapBtn" disabled>Lap</button>
     </div>
-    <script src="index.js"></script>
+    <div class="laps">
+      <h3>Laps</h3>
+      <ul id="lapsList"></ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
