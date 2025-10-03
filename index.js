@@ -68,6 +68,7 @@ function recordLap() {
   lapsList.appendChild(li);
 }
 
+
 // Event listeners
 startBtn.addEventListener("click", startTimer);
 stopBtn.addEventListener("click", stopTimer);
@@ -76,3 +77,4 @@ lapBtn.addEventListener("click", recordLap);
 
 // Initialize display
 updateDisplay();
+
