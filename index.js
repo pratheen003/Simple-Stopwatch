@@ -2,6 +2,7 @@ let hrs = 0, mins = 0, secs = 0, tens = 0;
 let interval = null;
 let running = false;
 
+
 const displayEl = document.getElementById("display");
 const startBtn = document.getElementById("startBtn");
 const stopBtn = document.getElementById("stopBtn");
@@ -77,4 +78,5 @@ lapBtn.addEventListener("click", recordLap);
 
 // Initialize display
 updateDisplay();
+
 
